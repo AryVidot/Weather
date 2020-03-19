@@ -11,66 +11,75 @@
     <title>Weather App</title>
   </head>
   <body>
-    <main>
-      <div class="ctnr">
-        <div class="ctnr_day">
-          <div class="location">
-            <h1 class="location-city">London</h1>
-            <p class="location-time">12pm</p>
-          </div>
-          <div class="icon">
-            <h1 class="icon">icon</h1>
-            <p class="icon-desc">sunny</p>
-            <div class="temperature">
-              24 <span class="temperature-value">C</span>
+    <div class="app-wrap">
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Search for a city..."
+        />
+      </header>
+      <main>
+        <div class="ctnr">
+          <section class="ctnr_current">
+            <div class="location">
+              <h1 class="city">London</h1>
+              <p class="date">Sunday 10 Jan 2020</p>
+              <p class="location-time">12pm</p>
             </div>
-          </div>
+            <div class="icon">
+              <h1 class="icon">icon</h1>
+              <p class="icon-weather">sunny</p>
+              <div class="temp-section">
+                <div class="temp">24<span>°c</span></div>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
-      <div class="ctnr">
-        <div class="ctnr_week">
-          <ul>
-            <li class="day-col1">
-              <p class="day">M</p>
-              <h1 class="icon-col1">icon</h1>
-              <p class="icon-col1-desc">sunny</p>
-              <div class="temperature-col1">
-                24 <span class="temperature-value">C</span>
-              </div>
-            </li>
-            <li class="day-col2">
-              <p class="day">T</p>
-              <h1 class="icon-col2">icon</h1>
-              <p class="icon-col2-desc">cloudy</p>
-              <div class="temperature-col2">
-                24 <span class="temperature-value">C</span>
-              </div>
-            </li>
-            <li class="day-col3"></li>
-            <li class="day-col3">
-              <p class="day">W</p>
-              <h1 class="icon-col3">icon</h1>
-              <p class="icon-col3-desc">sunny</p>
-              <div class="temperature-col3">
-                24 <span class="temperature-value">C</span>
-              </div>
-            </li>
-            <li class="day-col4"></li>
-            <li class="day-col4">
-              <p class="day">Th</p>
-              <h1 class="icon-col4">icon</h1>
-              <p class="icon-col4-desc">rainy</p>
-              <div class="temperature-col4">
-                24 <span class="temperature-value">C</span>
-              </div>
-            </li>
-          </ul>
+        <div class="ctnr">
+          <section class="ctnr_week">
+            <ul>
+              <li class="day-col-col1">
+                <p class="day">M</p>
+                <h1 class="icon-col1">icon</h1>
+                <p class="icon-col1-desc">sunny</p>
+                <div class="temp-col1">
+                  24 <span class="temp-value">°C</span>
+                </div>
+              </li>
+              <li class="day-col-col2">
+                <p class="day">T</p>
+                <h1 class="icon-col2">icon</h1>
+                <p class="icon-col2-desc">cloudy</p>
+                <div class="temp-col2">
+                  24 <span class="temp-value">°C</span>
+                </div>
+              </li>
+              <li class="day-col3">
+                <p class="day">W</p>
+                <h1 class="icon-col3">icon</h1>
+                <p class="icon-col3-desc">sunny</p>
+                <div class="temp-col3">
+                  24 <span class="temp-value">°C</span>
+                </div>
+              </li>
+              <li class="day-col4">
+                <p class="day">Th</p>
+                <h1 class="icon-col4">icon</h1>
+                <p class="icon-col4-desc">rainy</p>
+                <div class="temp-col4">
+                  24 <span class="temp-value">°C</span>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
-      </div>
-    </main>
-    <footer>API</footer>
+      </main>
+    </div>
+    <!-- <footer>API</footer> -->
 
-    <!Scripe>
+    <!Script>
     <script src="app.js"></script>
   </body>
 </html>
