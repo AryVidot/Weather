@@ -8,6 +8,13 @@ html {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
   color: aliceblue;
+  min-width: 360px;
+}
+
+hr {
+  width: 2px aliceblue;
+  border-style: solid;
+  border-radius: 50%;
 }
 
 /* ======== LAYOUT ========*/
@@ -29,22 +36,26 @@ body {
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 1) 100%
   );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .app-wrap {
+  /* height: 80vh; */
   border: aliceblue 5px solid;
   border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
 }
 
 .ctnr {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: aliceblue 3px solid; */
+  /* border-top: aliceblue 2px solid; */
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -78,11 +89,11 @@ header input:focus {
   align-content: center;
   text-align: center;
   flex-direction: row;
-  /* border: aliceblue 2px solid; */
 }
 
 .location,
-.icon {
+.icon,
+.current {
   padding: 1em;
 }
 
@@ -93,22 +104,24 @@ header input:focus {
   /* font-style: italic; */
 }
 
+.time,
+.weather {
+  font-style: italic;
+  font-weight: 900;
+}
+
 .temp {
   font-size: 2rem;
   font-weight: 900;
-  text-shadow: 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.temp span {
-  font-weight: 500;
+  text-shadow: 2px 5px rgba(250, 4, 4, 0.5);
 }
 
 /* CONTAINER WEEK */
 
 .ctnr_week {
-  width: 90%;
+  width: 100%;
   display: flex;
-  border-top: aliceblue 2px solid;
+  /* border-top: aliceblue 2px solid; */
   justify-content: center;
 }
 
@@ -120,9 +133,9 @@ ul {
 }
 
 li {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-evenly; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   text-decoration: none;
   list-style: none;
   padding: 0.3em;
