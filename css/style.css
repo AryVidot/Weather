@@ -16,6 +16,10 @@ hr {
   border-style: solid;
   border-radius: 50%;
 }
+/* ======== TYPOGRAPHY ======== */
+.title {
+  font-size: 2rem;
+}
 
 /* ======== LAYOUT ========*/
 
@@ -60,7 +64,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.15em 0.9em;
+  flex-direction: column;
+  padding: 0.9em 0.9em;
 }
 
 header input {
@@ -92,7 +97,7 @@ header input:focus {
 }
 
 .location,
-.icon,
+.weather-icon,
 .current {
   padding: 1em;
 }
