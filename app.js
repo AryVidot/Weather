@@ -1,5 +1,8 @@
-/* START WEATHER ICONS - Go to line 937 - 
+/* START WEATHER ICONS - Go to line 948 - 
 ===================== */
+
+
+//  Skycons for Android - https://github.com/torryharris/Skycons
 
 /* SKYCONS - https://github.com/maxdow/skycons/blob/master/skycons.js
 (function(global) {
@@ -950,6 +953,16 @@ const notificationElement = document.querySelector(".notification");
 // Search Box
 const searchbox = document.querySelector(".search-box");
 searchbox.addEventListener("keypress", setQuery);
+
+// GENERATE ICONS
+/* by default, icons are black but you can color them
+  var skycons = new Skycons({"color": "pink"});
+  var skycons = new Skycons({
+    "monochrome": false,
+    "color" : {
+      "cloud" : "#F00"
+     }
+    });*/
 
 // App data
 const weather = {};
